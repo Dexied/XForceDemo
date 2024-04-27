@@ -1,0 +1,1 @@
+B:\UnrealEngine\UE_5.4\Engine\Build\BatchFiles\RunUAT.bat BuildPlugin -Plugin="B:\Projects\XForceDemo\Plugins\XForce\XForce.uplugin" -Package="B:\Projects\XForceDemo\Builds\XForce" -Rocket -2019
