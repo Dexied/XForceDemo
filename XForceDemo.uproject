@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -13,8 +13,7 @@
 	"Plugins": [
 		{
 			"Name": "XForce",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/f9a431bd85074536afe1dbb982252807"
+			"Enabled": true
 		}
 	]
 }
