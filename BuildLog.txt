@@ -1,49 +1,128 @@
 Running AutomationTool...
-Using bundled DotNet SDK version: 8.0.412 win-x64
+Using bundled DotNet SDK version: 10.0 win-x64
 Starting AutomationTool...
 Parsing command line: BuildPlugin -Plugin=B:\Projects\XForceDemo\Plugins\XForce\XForce.uplugin -Package=B:\Projects\XForceDemo\Builds\XForce -Rocket -2019
 Initializing script modules...
-Total script module initialization time: 0.24 s.
-Using B:\VisualStudio2022\MSBuild\Current\Bin\MSBuild.exe
+Total script module initialization time: 0.59 s.
+Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
 Executing commands...
-Copying 525 file(s) using max 64 thread(s)
+Copying 100 file(s) using max 64 thread(s)
 Reading plugin from B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin...
 Building plugin for host platforms: Win64
-Running: B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject" -plugin="B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin" -noubtmakefiles -manifest="B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealEditor-Win64-Development.txt"
-Log file: B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealEditor-Win64-Development.txt
-Using 'git status' to determine working set for adaptive non-unity build (B:\UnrealEngineSource\UnrealEngine).
-UHT compiled-in object format Default
-Parsing headers for UnrealEditor
-  Running Internal UnrealHeaderTool B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject B:\Projects\XForceDemo\Builds\XForce\HostProject\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEditor.uhtmanifest -WarningsAsErrors
-UHT processed UnrealEditor in 13.8550521 seconds (12 files written)
-Writing manifest to B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
-Building UnrealEditor...
-Using Visual Studio 2022 14.44.35220 toolchain (B:\VisualStudio2022\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject" -plugin="B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin" -noubtmakefiles -manifest="B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt
+HostProject.uproject is has no code, but is being treated as a code-based project for platforms Android, IOS, Linux, Mac, TVOS, Win64 because: GameplayInsights plugin is disabled. Creating temporary .Target.cs files.
 Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
   Executing up to 8 processes, one per physical core
-Using Unreal Build Accelerator local executor to run 7 action(s)
-  Storage capacity 40Gb
----- Starting trace: 260125_190716 ----
-UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
-[1/7] Compile [x64] Module.XForceEditor.cpp
-[2/7] Link [x64] UnrealEditor-XForceEditor.lib
-[3/7] Compile [x64] Module.XForce.cpp
-[4/7] Link [x64] UnrealEditor-XForce.lib
-[5/7] Link [x64] UnrealEditor-XForce.dll
-[6/7] Link [x64] UnrealEditor-XForceEditor.dll
-[7/7] WriteMetadata UnrealEditor.target [NoUba]
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealEditor (no existing makefile)
+UHT compiled-in object format Default
+Writing manifest to B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XForceEditor unity file: XForceEditor.cpp, XForceVisualizer.cpp
+[Adaptive Build] Excluded from XForce unity file: XForce.cpp, XForceActor.cpp, XForceComponent.cpp, XForceInterface.cpp, XForceProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 17 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 13.95 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/17] Compile Resource [x64] Default.rc2
+[2/17] Compile Resource [x64] Default.rc2
+[3/17] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
+[4/17] Compile [x64] XForce.cpp
+[5/17] Compile [x64] Module.XForceEditor.cpp
+[6/17] Compile [x64] XForceInterface.cpp
+[7/17] Compile [x64] XForceActor.cpp
+[8/17] Compile [x64] XForceEditor.cpp
+[9/17] Compile [x64] XForceComponent.cpp
+[10/17] Compile [x64] Module.XForce.cpp
+[11/17] Compile [x64] XForceProcessor.cpp
+[12/17] Link [x64] UnrealEditor-XForce.lib
+[13/17] Compile [x64] XForceVisualizer.cpp
+[14/17] Link [x64] UnrealEditor-XForceEditor.lib
+[15/17] Link [x64] UnrealEditor-XForce.dll
+[16/17] Link [x64] UnrealEditor-XForceEditor.dll
+[17/17] WriteMetadata UnrealEditor.target [NoUba]
 
-Trace written to file B:/UnrealEngineSource/UnrealEngine/Engine/Programs/AutomationTool/Saved/Logs/UBA-UnrealEditor-Win64-Development.uba with size 4.9kb
-Total time in Unreal Build Accelerator local executor: 11.07 seconds
+Total time in Unreal Build Accelerator local executor: 41.62 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
 
 Result: Succeeded
-Total execution time: 40.40 seconds
-Took 40,83s to run dotnet.exe, ExitCode=0
-Building plugin for target platforms: Android, IOS, Linux, LinuxArm64, TVOS, Win64, VisionOS
-Running: B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\ThirdParty\DotNet\8.0.412\win-x64\dotnet.exe "B:\UnrealEngineSource\UnrealEngine\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject" -plugin="B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin" -noubtmakefiles -manifest="B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Development.txt"
-Log file: B:\UnrealEngineSource\UnrealEngine\Engine\Programs\AutomationTool\Saved\Logs\UBA-UnrealGame-Win64-Development.txt
-Using 'git status' to determine working set for adaptive non-unity build (B:\UnrealEngineSource\UnrealEngine).
+Total execution time: 84.23 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 15.9kb
+Took 84,82s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Win64
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject" -plugin="B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin" -noubtmakefiles -manifest="B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
 UHT compiled-in object format Default
-Parsing headers for UnrealGame
-  Running Internal UnrealHeaderTool B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject B:\Projects\XForceDemo\Builds\XForce\HostProject\Intermediate\Build\Win64\UnrealGame\Development\UnrealGame.uhtmanifest -WarningsAsErrors
-UHT processed UnrealGame in 8.9535248 seconds (12 files written)
+Writing manifest to B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XForce unity file: XForce.cpp, XForceActor.cpp, XForceComponent.cpp, XForceInterface.cpp, XForceProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 6 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 13.78 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/6] Compile [x64] XForce.cpp
+[2/6] Compile [x64] XForceInterface.cpp
+[3/6] Compile [x64] XForceActor.cpp
+[4/6] Compile [x64] Module.XForce.cpp
+[5/6] Compile [x64] XForceComponent.cpp
+[6/6] Compile [x64] XForceProcessor.cpp
+
+Total time in Unreal Build Accelerator local executor: 10.34 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
+
+Result: Succeeded
+Total execution time: 13.87 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.8kb
+Took 14,06s to run dotnet.exe, ExitCode=0
+Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\XForceDemo\Builds\XForce\HostProject\HostProject.uproject" -plugin="B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\XForce.uplugin" -noubtmakefiles -manifest="B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
+Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
+Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
+  Executing up to 8 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for UnrealGame (no existing makefile)
+Writing manifest to B:\Projects\XForceDemo\Builds\XForce\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
+Building UnrealGame...
+===== Toolchain Information =====
+Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
+Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from XForce unity file: XForce.cpp, XForceActor.cpp, XForceComponent.cpp, XForceInterface.cpp, XForceProcessor.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 6 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 63.91 GB physical, 13.19 GB/67.91 GB committed
+  UBA Storage capacity 40 GB
+[1/6] Compile [x64] XForce.cpp
+[2/6] Compile [x64] XForceInterface.cpp
+[3/6] Compile [x64] XForceActor.cpp
+[4/6] Compile [x64] Module.XForce.cpp
+[5/6] Compile [x64] XForceComponent.cpp
+[6/6] Compile [x64] XForceProcessor.cpp
+
+Total time in Unreal Build Accelerator local executor: 8.83 seconds
+Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
+
+Result: Succeeded
+Total execution time: 10.55 seconds
+Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 6.4kb
+Took 10,71s to run dotnet.exe, ExitCode=0
+Reading filter rules from B:\Projects\XForceDemo\Builds\XForce\HostProject\Plugins\XForce\Config\FilterPlugin.ini
+Loading FilterPluginWin64.ini
+BUILD SUCCESSFUL
+AutomationTool executed for 0h 1m 57s
+AutomationTool exiting with ExitCode=0 (Success)
